@@ -1,0 +1,21 @@
+Assignment 1: Serverless Application
+   Reference Link: https://aws.amazon.com/getting-started/hands-on/build-serverless-app-codestar-cloud9/?ref=gsrchandson
+   
+Assignment 2: AWS Step Functions and AWS Lambda
+   Reference Link: https://aws.amazon.com/getting-started/hands-on/create-a-serverless-workflow-step-functions-lambda/?ref=gsrchandson&id=updated
+
+Assignment 3: VPC configuration
+   https://www.1cloudhub.com/aws-vpc-101-creation-of-public-subnet-and-private-subnet-in-vpc-and-test-connectivity/
+
+
+Note: Save the last screenshot of your assigment.  
+
+
+
+Q1. Launch AWS EC2 Instance for AMI and connect to it remotely.
+
+Q2. Create a Lambda function using any language of your choice. Output should print your name.
+
+Q3. Create a S3 bucket with specific permission. Allow access to any specific aws account.
+
+Q4. Create a VPC with two subnets. Each subnets should have a EC2 attached. Create a internet gateway between these two subnets. Both the EC2 machines should be able to connect to each other.
