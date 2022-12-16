@@ -1,0 +1,89 @@
+Assignment 1: Serverless Application
+   Reference Link: https://aws.amazon.com/getting-started/hands-on/build-serverless-app-codestar-cloud9/?ref=gsrchandson
+
+
+Steps : 
+search for Code Star
+create Project 
+template AWS Node.js
+Name :- aplaproject2
+Create project ------------------------ Creation will Take TIME
+         A popup will come as Project Provisioned. 
+	   And status[Project Activity] as in proress ----> Succeeded
+set up AWS Cloud 9
+	Instance type : t2.micro
+	VPC	 	  : default
+	Subnet        : default
+	Enviornment name : newEnv
+	Cost-saving settings : default
+click Create Environment button.
+click on IDE Tab :
+	newEnv
+		click on Open IDE -----> New tab will open\
+In console :
+	type
+	git config --global user.name YOUR_USER_NAME
+	git config --global user.email YOUR_EMAIL_ADDRESS
+In navigation bar there is magnifiting glass below that there is folder [it may take time to load]
+	open newEnv
+	under that select nodejsproject
+	under that public --> assets --> index.html
+open index.html [left click --> open]  ----> new tab will pop
+look for "application" and change it to "application!!!!!!!!!!"
+	OR 	add by yourselve ---->   <h3>Welcome to Site........</h3> 
+Save it ---> Ctrl + S
+
+type in terminal --> cd /home/ec2-user/environment/nodejsproject
+	it will return 
+		ec2-user:~/environment/nodejsproject (master) $ 
+then type
+		git config --global user.name YOUR_USER_NAME
+		git config --global user.email YOUR_EMAIL_ADDRESS
+then type
+		git status 
+
+it will return
+
+		On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   public/index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+type 	
+		git add public/index.html
+		git commit -m "add three bangs"
+
+it will return
+
+[master d506d41] add three bangs
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+type 
+		git push origin master
+
+it will return 
+
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 415 bytes | 415.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Validating objects: 100%
+To https://git-codecommit.us-east-1.amazonaws.com/v1/repos/NodejsProject
+   5126337..d506d41  master -> master
+
+then go to dasborad or pervious Tab
+	then click on View Application button, html will appear in next tab ---> it will show before vali index.html
+
+IT WILL TAKE TIME TO GET UPDATED 
+
+then after sometime click on View Application button , it will show updated index.html
+
+And STOP Instance from ec2
+
+FINISH
